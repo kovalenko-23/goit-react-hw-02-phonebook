@@ -1,16 +1,5 @@
-import styled from "@emotion/styled";
-
-const Wrapper = styled.div`
-  margin-bottom: 30px;
-`;
-const Filterlabel = styled.label`
-  padding: 15px;
-  border: 1px solid black;
-  font-weight: bold;
-`;
-const FilterInput = styled.input`
-  margin-left: 8px;
-`;
+import { Wrapper, Filterlabel, FilterInput } from "./ContactsFilter.styled";
+import PropTypes from "prop-types";
 
 export const ContactsFilter = ({ value, onChange }) => {
   return (
@@ -26,4 +15,9 @@ export const ContactsFilter = ({ value, onChange }) => {
       </Filterlabel>
     </Wrapper>
   );
+};
+
+ContactsFilter.propTypes = {
+  value: PropTypes.string,
+  onChange: PropTypes.func,
 };

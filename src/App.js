@@ -2,7 +2,7 @@ import { Component } from "react";
 import shortid from "shortid";
 import styled from "@emotion/styled";
 import ContactsForm from "./Components/ContactsForm/ContactsForm";
-import ContactsList from "./Components/ContactsList/ContactsList";
+import ContactsList from "./Components/ContactList/ContactsList";
 import { ContactsFilter } from "./Components/ContactsFilter/ContactsFilter";
 
 const Wrapper = styled.div`

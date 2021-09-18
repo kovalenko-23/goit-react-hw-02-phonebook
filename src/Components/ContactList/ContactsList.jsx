@@ -1,13 +1,6 @@
 import ContactsItem from "../ContactsItem/ContactsItem";
-import styled from "@emotion/styled";
-
-const List = styled.ul`
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-`;
+import { List } from "./ContactList.styled";
+import PropTypes from "prop-types";
 
 const ContactsList = ({ contacts, onDeleteButton }) => {
   return (
@@ -26,3 +19,14 @@ const ContactsList = ({ contacts, onDeleteButton }) => {
 };
 
 export default ContactsList;
+
+ContactsList.propType = {
+  contonDeleteButtonacts: PropTypes.func,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+      number: PropTypes.string,
+    })
+  ),
+};
