@@ -20,7 +20,7 @@ const ContactsList = ({ contacts, onDeleteButton }) => {
 
 export default ContactsList;
 
-ContactsList.propType = {
+ContactsList.propTypes = {
   contonDeleteButtonacts: PropTypes.func,
   contacts: PropTypes.arrayOf(
     PropTypes.shape({

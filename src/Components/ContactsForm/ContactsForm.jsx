@@ -63,6 +63,6 @@ export class ContactsForm extends Component {
 
 export default ContactsForm;
 
-ContactsForm.propType = {
+ContactsForm.propTypes = {
   onSubmit: PropTypes.func,
 };
